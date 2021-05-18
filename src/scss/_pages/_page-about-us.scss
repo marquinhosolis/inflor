@@ -1,0 +1,453 @@
+.aboutUsCover {
+    position: relative;
+    .aboutUsCoverCopy {
+        padding: 0 20px;
+        max-width: 600px;
+        h1 {
+            color: #242f30;
+            font-size: 42px;
+            font-weight: 500;
+        }
+        .aboutUsCoverIntroText {
+            color: #242f30;
+            font-weight: 300;
+            line-height: 31px;
+            font-size: 16px;
+            @media (min-width: 1200px) {
+                font-size: 18px;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+    .aboutUsCoverImage {
+        position: relative;
+        border-radius: 8px;
+        z-index: 0;
+        max-width: 800px;
+        @include ratio(380, 225);
+        @media (min-width: 768px) {
+            width: 50%;
+            z-index: 1;
+        }
+        @media (min-width: 1024px) {
+            //right: -120px;
+            right: -20px;
+        }
+    }
+
+    .aboutUsCoverAfter {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        img {
+            width: 100%;
+            display: block;
+        }
+        @media (min-width: 768px) {
+            z-index: 0;
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 1200px) {
+        padding: 120px 0;
+        padding-bottom: 180px;
+    }
+}
+
+.aboutUsStats {
+    padding: 80px 0;
+    background: #162b35;
+    background-position: center center;
+    background-size: cover;
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    .aboutUsStatBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 5px 7px 18px 6px rgba(149, 149, 149, 0.1);
+        background: #fff;
+        text-align: center;
+        margin: 15px;
+        h2 {
+            margin: 0;
+            color: #16c093;
+            font-size: 22px;
+            font-weight: 500;
+            @media (min-width: 1200px) {
+                font-size: 28px;
+            }
+        }
+        p {
+            margin: 0;
+            color: #242f30;
+            font-size: 16px;
+            @media (min-width: 1200px) {
+                font-size: 20px;
+            }
+        }
+        @media (min-width: 768px) {
+            width: calc(33% - 30px);
+        }
+        @media (min-width: 1024px) {
+            width: calc(25% - 30px);
+            padding: 40px;
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 150px 0;
+    }
+}
+
+.aboutMission {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 50px 0;
+    padding-bottom: 20px;
+    .aboutMissionCopy {
+        margin: 20px 0;
+        padding: 0 20px;
+        h2 {
+            color: #242f30;
+            font-size: 24px;
+            font-weight: 500;
+            @media (min-width: 768px) {
+                font-size: 36px;
+            }
+        }
+        @media (min-width: 768px) {
+            font-size: 18px;
+            width: 50%;
+            max-width: 600px;
+            margin-left: auto;
+        }
+    }
+    .aboutMissionImageWrapper {
+        position: relative;
+        left: -10px;
+        .aboutMissionImage {
+            border-radius: 0 8px 8px 0;
+            box-shadow: 10px 10px 0px 0px rgba(2, 248, 183, 1);
+            @include ratio(275, 120);
+            max-width: 80%;
+            margin-right: auto;
+            @media (min-width: 768px) {
+                margin-right: 0;
+                margin-left: auto;
+                box-shadow: -20px 20px 0px 0px rgba(2, 248, 183, 1);
+                max-width: 650px;
+                border-radius: 8px 0 0 8px;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 50%;
+            left: auto;
+            right: -20px;
+        }
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.aboutVision {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 50px 0;
+    .aboutVisionCopy {
+        margin: 20px 0;
+        padding: 0 20px;
+        h2 {
+            color: #242f30;
+            font-size: 24px;
+            font-weight: 500;
+            @media (min-width: 768px) {
+                font-size: 36px;
+            }
+        }
+        @media (min-width: 768px) {
+            font-size: 18px;
+            width: 50%;
+            max-width: 600px;
+            margin-right: auto;
+        }
+    }
+    .aboutVisionImageWrapper {
+        position: relative;
+        right: -10px;
+        .aboutVisionImage {
+            border-radius: 8px 0 0 8px;
+            box-shadow: -10px 10px 0px 0px rgba(2, 248, 183, 1);
+            @include ratio(275, 120);
+            max-width: 80%;
+            margin-left: auto;
+            @media (min-width: 768px) {
+                box-shadow: 20px 20px 0px 0px rgba(2, 248, 183, 1);
+                margin-left: 0;
+                margin-right: auto;
+                max-width: 650px;
+                border-radius: 0 8px 8px 0;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 50%;
+            //left: auto;
+            left: -20px;
+        }
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}
+
+.aboutOurValues {
+    position: relative;
+    padding: 80px 0;
+
+    .aboutOurValuesTitle {
+        position: relative;
+        z-index: 1;
+        padding: 0 40px;
+        h2 {
+            color: #242f30;
+            font-size: 30px;
+            font-weight: 500;
+            text-align: center;
+            @media (min-width: 768px) {
+                font-size: 42px;
+            }
+        }
+    }
+
+    .aboutOurValuesTitleBoxes {
+        padding: 30px 0;
+        position: relative;
+        z-index: 1;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                margin: 10px;
+                max-width: 220px;
+                background: #fff;
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 5px 7px 18px 6px rgba(149, 149, 149, 0.1);
+                text-align: center;
+                @media (max-width: 768px) {
+                    width: 44%;
+                }
+            }
+        }
+        .flipster__item--past,
+        .flipster__item--future {
+            opacity: 1;
+            .flipster__item__content {
+                transform: scale(1);
+            }
+        }
+        .flipster__item--current {
+            .aboutOurValuesTitleBox {
+                background-image: linear-gradient(
+                    38deg,
+                    #02f8b7 0%,
+                    #05c5c0 100%
+                );
+                color: #000;
+                .aboutOurValuesTitleBoxIcon {
+                    .svg {
+                        filter: brightness(0%);
+                    }
+                }
+                .aboutOurValuesTitleBoxTitle {
+                    color: #000;
+                }
+            }
+        }
+
+        .flipster__button {
+            margin: 0;
+        }
+
+        .aboutOurValuesTitleBox {
+            padding: 40px 10px;
+            height: 100%;
+            color: #242f30;
+            .aboutOurValuesTitleBoxIcon {
+                width: 100%;
+                margin: auto;
+                .svg {
+                    max-width: 100%;
+                }
+            }
+            .aboutOurValuesTitleBoxTitle {
+                margin: 10px;
+                font-size: 20px;
+                color: #16c093;
+                font-weight: 500;
+            }
+            @media (min-width: 768px) {
+                padding: 40px 20px;
+            }
+            &:hover {
+                background-image: linear-gradient(
+                    38deg,
+                    #02f8b7 0%,
+                    #05c5c0 100%
+                );
+                color: #000;
+                .aboutOurValuesTitleBoxIcon {
+                    .svg {
+                        filter: brightness(0%);
+                    }
+                }
+                .aboutOurValuesTitleBoxTitle {
+                    color: #000;
+                }
+            }
+        }
+    }
+    .aboutOurValuesBg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    @media (min-width: 768px) {
+        padding-top: 150px;
+    }
+}
+
+.aboutCompanyCulture {
+    padding: 80px 0;
+    background: #eeeeee;
+    .aboutCompanyCultureCopy {
+        padding: 0 15px;
+        margin-bottom: 30px;
+        h2 {
+            color: #242f30;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            @media (min-width: 1024px) {
+                font-size: 42px;
+            }
+        }
+        @media (min-width: 768px) {
+            padding: 0 30px;
+            max-width: 680px;
+            margin-left: auto;
+            width: 50%;
+        }
+    }
+    .aboutCompanyCultureImage {
+        max-width: 90%;
+        margin-left: auto;
+        border-radius: 8px;
+        box-shadow: 20px 20px 0px 0px rgba(2, 248, 183, 1);
+        @include ratio(900, 220);
+        @media (min-width: 768px) {
+            position: relative;
+            right: -50px;
+            width: 50%;
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.aboutLeadership {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #fff 50%, #eee 50%);
+    h2 {
+        color: #242f30;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+        @media (min-width: 1024px) {
+            font-size: 42px;
+        }
+    }
+    h3 {
+        max-width: 780px;
+        margin: auto;
+        color: #242f30;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        @media (min-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+    .aboutLeadershipWrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .aboutLeadershipMember {
+            max-width: 250px;
+            width: calc(50% - 20px);
+            margin: 10px;
+            .aboutLeadershipMemberImage {
+                margin-bottom: 15px;
+                @include ratio(1, 1);
+                border-radius: 8px;
+                background-color: #ccc;
+            }
+            .aboutLeadershipMemberName {
+                margin-bottom: 10px;
+                color: #242f30;
+                font-size: 17px;
+                font-weight: 500;
+            }
+            .aboutLeadershipMemberTitle {
+                color: #242f30;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+    }
+}

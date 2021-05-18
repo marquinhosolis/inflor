@@ -1,0 +1,91 @@
+.singleCaseStudy {
+    background: linear-gradient(0deg, #eee 30%, #fff 70%);
+    padding: 80px 0;
+    article {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding: 60px 30px;
+        border-radius: 8px;
+        background: url("../images/case-studies-box-bg.png") top right #232f30
+            no-repeat;
+        @media (min-width: 768px) {
+            padding: 100px 60px;
+        }
+    }
+
+    .singleCaseStudyArticleImages {
+        position: relative;
+        margin-bottom: 20px;
+        .singleCaseStudyArticleThumbnail {
+            max-width: 80%;
+            z-index: 0;
+            @include ratio(1, 1);
+            border-radius: 50%;
+        }
+        .singleCaseStudyArticleImageLogo {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            max-width: 60%;
+            img {
+                max-height: 150px;
+            }
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 30%;
+            margin: 30px 60px;
+            float: left;
+        }
+    }
+    .singleCaseStudyArticleText {
+        color: #fff;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        h1 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: 300;
+            @media (min-width: 1024px) {
+                font-size: 36px;
+                margin-bottom: 15px;
+            }
+        }
+        h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 500;
+            @media (min-width: 1024px) {
+                font-size: 30px;
+            }
+        }
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+    .singlePostBodyFooterNextPosts {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .btn {
+            margin: 5px 3px;
+            color: #000 !important;
+        }
+        @media (min-width: 768px) {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.clear {
+    clear: both;
+    float: none;
+}

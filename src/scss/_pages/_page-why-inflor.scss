@@ -1,0 +1,279 @@
+.whyInflorPage {
+    .aboutVision {
+        background: #eeeeee;
+        padding: 80px 0;
+        .aboutVisionImageWrapper {
+            .aboutVisionImage {
+                @include ratio(780, 465);
+            }
+        }
+
+        @media (min-width: 768px) {
+            padding: 150px 0;
+        }
+    }
+    .solutions {
+        background: linear-gradient(180deg, #fff 75%, #eee 25%);
+        padding: 80px 0;
+        .solutionsTitle {
+            max-width: 800px;
+            margin: auto;
+            h3 {
+                font-size: 24px;
+                @media (min-width: 768px) {
+                    font-size: 36px;
+                }
+            }
+        }
+        .solutionBox {
+            overflow: hidden;
+            padding: 0;
+            .solutionBoxImage {
+                @include ratio(420, 190);
+            }
+            .solutionBoxTextWrapper {
+                padding: 60px 30px;
+            }
+        }
+    }
+    .transformBusiness {
+        padding: 80px 0;
+        .transformBusinessBox {
+            @media (min-width: 768px) {
+                width: 33%;
+            }
+        }
+        .transformBusinessTitle {
+            h3 {
+                margin-bottom: 20px;
+            }
+            h4 {
+                max-width: 700px;
+                margin: auto;
+                color: #242f30;
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+        .transformBusinessBoxCopy {
+            line-height: 31px;
+        }
+    }
+    .testimonials {
+        padding: 80px 0;
+        background: linear-gradient(180deg, #fff 75%, #eee 25%);
+        .testimonialsTitle {
+            max-width: 890px;
+            margin: auto;
+            text-align: center;
+            h3 {
+                margin: 0;
+                margin-bottom: 20px;
+                color: #3a3f3f;
+                font-size: 36px;
+                font-weight: 500;
+            }
+            h4 {
+                margin: 0;
+                color: #242f30;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 29px;
+            }
+        }
+        .testimonialsWrapper {
+            margin-top: 50px;
+            .flipster__item {
+                perspective: 0px;
+                opacity: 0;
+            }
+            .flipster__item--current,
+            .flipster__item--future-1,
+            .flipster__item--past-1 {
+                opacity: 1;
+            }
+            .flipster__item--past,
+            .flipster__item--future {
+                //opacity: 1;
+                .flipster__item__content {
+                    transform: rotateY(0deg) scale(0.85);
+                }
+                .testimonialBox {
+                    background-color: #00b182;
+                    color: #fff;
+                }
+            }
+            .flipster__button {
+                margin: 0;
+            }
+            .testimonialBox {
+                text-align: center;
+                max-width: 350px;
+                padding: 80px 40px;
+                box-shadow: 0 8px 16px rgba(55, 55, 55, 0.18);
+                border-radius: 8px;
+                background-color: #eeeeee;
+                margin-bottom: 20px;
+                .testimonialBoxImage {
+                    @include ratio(1, 1);
+                    max-width: 120px;
+                    margin: auto;
+                    border-radius: 50%;
+                    margin-bottom: 30px;
+                }
+                .testimonialBoxCopy {
+                    font-size: 13px;
+                    line-height: 24.37px;
+                    strong {
+                        display: block;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+        .solustionsBtn {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+}
+
+.certifications {
+    padding: 80px 0;
+    padding-top: 30px;
+    background: #eee;
+    .certificationsTitle {
+        margin-bottom: 30px;
+        h3 {
+            margin-top: 0;
+            text-align: center;
+            font-size: 24px;
+            @media (min-width: 768px) {
+                font-size: 36px;
+            }
+        }
+    }
+    .certificationsWrapper {
+        transition: all linear 0.2s;
+        .certificationsBox {
+            transition: all linear 0.2s;
+            padding: 50px 30px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            text-align: center;
+            margin-bottom: 10px;
+            .certificationsBoxImage {
+                margin-bottom: 15px;
+            }
+            .certificationsBoxCopy {
+                transition: all linear 0.2s;
+                .certificationsBoxTitle {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+                .certificationsBoxText {
+                    transition: all linear 0.2s;
+                    font-size: 14px;
+                    line-height: 21px;
+                    display: none;
+                    //height: 0;
+                    //overflow: hidden;
+                }
+            }
+            @media (min-width: 768px) {
+                margin: 20px 1%;
+                width: 23%;
+            }
+            &:hover {
+                background: red;
+                .certificationsBoxCopy {
+                    .certificationsBoxText {
+                        //height: auto;
+                    }
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+.partnerships {
+    padding: 80px 0;
+    background-color: #eee;
+    background-position: left top, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    .partnershipsTitle {
+        max-width: 550px;
+        margin: auto;
+        text-align: center;
+        h3 {
+            margin: 0;
+            margin-bottom: 20px;
+            color: #3a3f3f;
+            font-size: 36px;
+            font-weight: 500;
+        }
+        h4 {
+            margin: 0;
+            color: #242f30;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 29px;
+        }
+    }
+    .partnershipsWrapper {
+        margin: 50px 0;
+        .partnershipWrapper {
+            h5 {
+                text-align: center;
+                color: #242f30;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .partnershipBox {
+                padding: 60px 30px;
+                border-radius: 8px;
+                background-color: #ffffff;
+                .partnershipRow {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .partnershipLogo {
+                        width: 40%;
+                        text-align: center;
+                    }
+                    .partnershipText {
+                        width: 60%;
+                        padding: 10px;
+                        font-size: 16px;
+                        color: #242f30;
+                        font-weight: 300;
+                        strong {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            @media (min-width: 768px) {
+                width: 48%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+    @media (max-width: 1200px) {
+        background-size: 0;
+    }
+}

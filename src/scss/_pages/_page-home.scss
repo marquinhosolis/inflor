@@ -1,0 +1,663 @@
+.cover {
+    padding: 50px 0;
+    padding-bottom: 100px;
+    text-align: center;
+    background-position: center top;
+    background-size: cover;
+    @media (min-width: 768px) {
+        padding: 80px 0;
+        padding-bottom: 200px;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 100px 0;
+        padding-bottom: 300px;
+    }
+}
+
+.coverHome {
+    position: relative;
+    h1 {
+        font-size: 28px;
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        font-weight: 500;
+        @media (min-width: 768px) {
+            font-size: 36px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 48px;
+        }
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: 300;
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 24px;
+            max-width: 760px;
+        }
+    }
+    .btn {
+        @media (min-width: 1200px) {
+            font-size: 24px;
+            max-width: 760px;
+        }
+    }
+    .coverHomeMask {
+        position: absolute;
+        pointer-events: none;
+        bottom: 0;
+        width: 100%;
+        img {
+            display: block;
+        }
+    }
+}
+
+.usps {
+    padding: 50px 0;
+    background: #eeeeee;
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+    }
+    .uspsUnique {
+        transition: all linear 0.2s;
+        padding: 30px;
+        border-radius: 8px;
+        background: #eeeeee;
+        margin: 20px 0;
+        .uspsUniqueIcon {
+            max-width: 70px;
+            margin-bottom: 10px;
+        }
+        .uspsUniqueTitle {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #242f30;
+            font-weight: 500;
+        }
+        .uspsUniqueCopy {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+        &:hover {
+            background: #fff;
+            box-shadow: 0 8px 21px rgba(31, 80, 84, 0.16);
+        }
+        @media (min-width: 768px) {
+            width: 32%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 100px 0;
+    }
+}
+
+.solutions {
+    background: #eeeeee;
+
+    .solutionsTitle {
+        text-align: center;
+        h3 {
+            margin: 0;
+            margin-bottom: 50px;
+            color: #3a3f3f;
+            font-size: 42px;
+            font-weight: 500;
+        }
+    }
+    .solutionsBoxes {
+        .container {
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+        }
+        .solutionBox {
+            transition: all linear 0.2s;
+            padding: 60px 30px;
+            border-radius: 8px;
+            background-color: #232f30;
+            color: #fff;
+            text-align: center;
+            margin: 20px 0;
+            .solutionBoxTitle {
+                font-size: 24px;
+                font-weight: 500;
+                &:after {
+                    content: "";
+                    display: block;
+                    margin: 30px auto;
+                    width: 80px;
+                    height: 1px;
+                    background-color: #ffffff;
+                }
+            }
+            .solutionBoxText {
+                margin-bottom: 20px;
+                line-height: 2;
+                font-size: 14px;
+            }
+            &:hover {
+                background-color: #00b182;
+                box-shadow: 0 8px 16px rgba(55, 55, 55, 0.55);
+            }
+            @media (min-width: 768px) {
+                width: 32%;
+            }
+            @media (min-width: 1200px) {
+                width: 30%;
+            }
+        }
+        @media (max-width: 768px) {
+            background-size: 0;
+        }
+        @media (min-width: 768px) {
+            padding: 50px 0;
+            background-size: auto 100%;
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+    }
+    .solustionsBtn {
+        padding: 30px 0;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+}
+
+.whyInflor {
+    //padding: 80px 0;
+    background: linear-gradient(180deg, #fff 50%, #eee 50%);
+    .whyInflorTitle {
+        font-size: 30px;
+        text-align: center;
+        @media (min-width: 1200px) {
+            font-size: 42px;
+        }
+    }
+    .solutionsTitle {
+        text-align: center;
+        h3 {
+            margin: 0;
+            margin-bottom: 50px;
+            color: #3a3f3f;
+            font-size: 42px;
+            font-weight: 500;
+        }
+    }
+    .whyInflorImages {
+        position: relative;
+        .whyInflorImageOne {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .whyInflorImageTwo {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    }
+    .whyInflorCopy {
+        margin: 0 15px;
+        padding: 20px;
+        background-color: #232f30;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+
+.whyInflor--mobile {
+    .whyInflorImages {
+        .whyInflorImageOne {
+            @include ratio(250, 230);
+            width: 60%;
+        }
+        .whyInflorImageTwo {
+            @include ratio(240, 175);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60%;
+        }
+    }
+    .whyInflorCopy {
+        position: relative;
+        top: -30px;
+    }
+    .whyInflorCopyButton {
+        text-align: center;
+    }
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.whyInflor--desktop {
+    padding: 100px 0;
+    display: none;
+    .whyInflorCopyWrapper {
+        width: 50%;
+        max-width: 650px;
+
+        .whyInflorCopyButton {
+            text-align: center;
+            margin-top: 30px;
+        }
+        @media (min-width: 1200px) {
+            //width: 60%;
+        }
+    }
+    .whyInflorImages {
+        width: 50%;
+        max-width: 650px;
+        //margin: auto;
+        .whyInflorImageOne {
+            @include ratio(815, 580);
+            width: 80%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .whyInflorImageTwo {
+            @include ratio(460, 420);
+            top: 0;
+            transform: translate(0, 50%);
+            width: 50%;
+            @media (min-width: 1024px) {
+                transform: translate(0, 25%);
+            }
+        }
+        @media (min-width: 1200px) {
+            //width: 60%;
+        }
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.caseStudiesHome {
+    padding: 80px 0;
+    background: #eee;
+    .caseStudiesHomeTitle {
+        text-align: center;
+        h3 {
+            color: #3a3f3f;
+            font-size: 42px;
+            font-weight: 500;
+            max-width: 550px;
+            margin: auto;
+        }
+    }
+    .caseStudiesHomeBoxes {
+        margin: 50px 0;
+        .container {
+            transition: all linear 0.5s;
+            @media (min-width: 768px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        .caseStudyHome {
+            display: block;
+            margin: 20px;
+            transition: all linear 0.2s;
+            border-radius: 8px;
+            background-color: #232f30;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+            .caseStudyHomeImage {
+                @include ratio(1, 1);
+                max-width: 250px;
+                margin: auto;
+                margin-bottom: 30px;
+                border-radius: 50%;
+                .caseStudyHomeLogo {
+                    max-width: 50%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .caseStudyHomeCopy {
+                //overflow: hidden;
+                //height: 0;
+                display: none;
+            }
+            &:hover {
+                background-color: #16c093;
+                .caseStudyHomeCopy {
+                    // height: auto;
+                }
+            }
+            @media (min-width: 768px) {
+                width: 32%;
+            }
+            @media (min-width: 1200px) {
+                width: 28%;
+            }
+        }
+    }
+
+    .caseStudiesBtn {
+        text-align: center;
+    }
+    @media (min-width: 768px) {
+        background: linear-gradient(0deg, #fff 50%, #eee 50%);
+    }
+}
+
+.transformBusiness {
+    background: #eee;
+    padding: 50px 0;
+    .transformBusinessTitle {
+        text-align: center;
+        h3 {
+            color: #3a3f3f;
+            font-size: 42px;
+            font-weight: 500;
+            max-width: 530px;
+            margin: auto;
+        }
+    }
+    .transformBusinessBoxes {
+        padding: 30px 0;
+        .container {
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-around;
+                align-items: stretch;
+                flex-wrap: wrap;
+            }
+        }
+        .transformBusinessBox {
+            padding: 30px;
+            transition: all linear 0.2s;
+            border-radius: 8px;
+            .transformBusinessBoxIcon {
+                margin-bottom: 15px;
+            }
+            .transformBusinessBoxTitle {
+                margin-bottom: 10px;
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .transformBusinessBoxCopy {
+                font-size: 16px;
+                font-weight: 300;
+            }
+            &:hover {
+                background: #fff;
+                box-shadow: 0 8px 21px rgba(31, 80, 84, 0.16);
+            }
+            @media (min-width: 768px) {
+                width: 40%;
+            }
+            @media (min-width: 1024px) {
+                width: 23%;
+            }
+        }
+        @media (min-width: 1200px) {
+            padding: 50px 0;
+        }
+    }
+    .transformBusinessBoxesHome {
+        padding-bottom: 0;
+    }
+}
+
+.blogShowcaseHome {
+    padding-bottom: 120px;
+    padding-top: 0;
+    .blogShowcase {
+        padding-top: 20px;
+    }
+    .blogShowcaseArticle {
+        &:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: transparent;
+            div {
+                margin-top: 20px;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 2;
+                color: #3a3f3f;
+                a {
+                    color: inherit;
+                }
+                strong {
+                    color: #09b284;
+                }
+                @media (min-width: 768px) {
+                    margin-top: 0;
+                    max-width: 280px;
+                }
+            }
+        }
+    }
+}
+
+.resourceHome {
+    padding-bottom: 50px;
+    background: linear-gradient(0deg, #fff 95%, #eee 5%);
+    .resourceHomeImage {
+        width: 85%;
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+    }
+    .resourceHomeText {
+        margin-top: 30px;
+        .resourceHomeTextWrapper {
+            max-width: 80%;
+            margin: auto;
+            .resourceHomeTextTitle {
+                p {
+                    margin-bottom: 5px;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+                h3 {
+                    margin: 0;
+                    margin-bottom: 20px;
+                    font-size: 26px;
+                    font-weight: 500;
+                }
+            }
+            .resourceHomeTextCopy {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.8;
+                strong {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+            .resourceHomeTextForm {
+                fieldset {
+                    max-width: 600px;
+                    padding: 0;
+                    border: 1px solid #ccc;
+                    border-radius: 8px;
+                    .frm_fields_container {
+                        padding: 5px;
+                        .frm_form_field {
+                            input {
+                                width: 100%;
+                                border: 0;
+                                padding: 15px;
+                                text-align: center;
+                                font-family: "BentonSans";
+
+                                @media (min-width: 768px) {
+                                    text-align: left;
+                                }
+                            }
+                            @media (min-width: 768px) {
+                                width: 60%;
+                            }
+                        }
+                        .frm_submit {
+                            button {
+                                width: 100%;
+                                padding: 15px;
+                                border: 0;
+                                border-radius: 3px;
+                                font-family: "BentonSans";
+                                font-weight: 500;
+                                background-color: #16c093;
+                                color: #fff;
+                            }
+                            @media (min-width: 768px) {
+                                width: 40%;
+                            }
+                        }
+                        @media (min-width: 768px) {
+                            display: flex;
+                            align-items: stretch;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+            @media (min-width: 1200px) {
+                max-width: 600px;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 55%;
+        }
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.clientsHome {
+    background: #eee;
+    padding: 80px 0;
+    .clientsHomeTitle {
+        margin-bottom: 50px;
+        text-align: center;
+        h3 {
+            color: #3a3f3f;
+            font-size: 32px;
+            font-weight: 500;
+            max-width: 450px;
+            margin: auto;
+            @media (min-width: 1024px) {
+                font-size: 48px;
+            }
+        }
+    }
+    .clientsHomeLogos {
+        .slides {
+            li {
+                border-radius: 20px;
+                padding: 20px;
+                background-color: #ababab;
+            }
+        }
+    }
+    .clientsHomeLogosBlock {
+        .slides {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                margin: 20px;
+                .clientsHomeLogoWrapper {
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+.homeCta {
+    padding-top: 50px;
+    overflow: hidden;
+    .homeCtaText {
+        position: relative;
+        margin-bottom: 30px;
+        .homeCtaTextWrapper {
+            width: 60%;
+            max-width: 600px;
+            margin: auto;
+            h3 {
+                margin: 0;
+                margin-bottom: 20px;
+                line-height: 1.8;
+                font-size: 30px;
+                font-weight: 500;
+            }
+            @media (min-width: 1200px) {
+            }
+        }
+        .homeCtaBtnWrapper {
+            max-width: 80%;
+            margin: auto;
+            a {
+                @media (min-width: 1024px) {
+                    font-size: 24px;
+                }
+            }
+            @media (min-width: 1024px) {
+                max-width: 100%;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                right: 0;
+                transform: translate(50%, 80%);
+                z-index: 2;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 55%;
+        }
+    }
+    .homeCtaImage {
+        align-self: flex-end;
+        margin-left: auto;
+        position: relative;
+        bottom: -20px;
+        width: 85%;
+        @media (min-width: 768px) {
+            width: 45%;
+            bottom: -30px;
+        }
+    }
+    @media (min-width: 768px) {
+        //background: linear-gradient(0deg, #fff 95%, #eee 5%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
